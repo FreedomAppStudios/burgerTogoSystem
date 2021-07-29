@@ -4,13 +4,13 @@
 //
 //  Created by Other user on 7/26/21.
 //
-
+import Firebase
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+            //OrderListView()
+        Text("test")
     }
 }
 

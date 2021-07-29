@@ -6,12 +6,29 @@
 //
 
 import SwiftUI
-
+import Firebase
 @main
 struct burger_to_goApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OrderListView()
         }
     }
 }
+//@main
+//struct Example_ProjectApp: App {
+//    // MARK: - Life Cycle
+//    init() {
+//        FirebaseApp.configure()
+//    }
+//
+//    // MARK: - UI Elements
+//    var body: some Scene {
+//        WindowGroup {
+//            MainScreen()
+//        }
+//    }
+//}
