@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Firebase
+
+
 struct OrderListView: View {
     @State var orders = [OrderData]()
     @State var m = "Orders"
@@ -19,7 +21,7 @@ struct OrderListView: View {
                         .font(.title)
                         .bold()
                         .onAppear(perform: {
-                            
+                            UIApplication.shared.isIdleTimerDisabled = true
                             db.collection("z-orders")
                                 .order(by: "time", descending: true)
                                 .addSnapshotListener {
@@ -37,6 +39,10 @@ struct OrderListView: View {
                                                 }
                                             }
                                         }
+                                        //Alert here
+                                        playSound()
+                                        
+                                        
                                     }
                                 }
                             
@@ -74,6 +80,7 @@ struct OrderListView: View {
             }
         }
     }
+    
 }
 
 struct OrderListView_Previews: PreviewProvider {

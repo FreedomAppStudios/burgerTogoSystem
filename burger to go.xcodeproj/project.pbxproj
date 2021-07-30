@@ -20,6 +20,10 @@
 		FEC0B31126AFA1FC00CAE4EB /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0B31026AFA1FC00CAE4EB /* OrderListView.swift */; };
 		FEC0B31326AFA21400CAE4EB /* ItemsInOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0B31226AFA21400CAE4EB /* ItemsInOrderView.swift */; };
 		FEC0B31726AFA81400CAE4EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEC0B31626AFA81400CAE4EB /* GoogleService-Info.plist */; };
+		FEF0FB2B26B322D7002355DC /* orderInAlert.mov in Resources */ = {isa = PBXBuildFile; fileRef = FEF0FB2A26B322D7002355DC /* orderInAlert.mov */; };
+		FEF0FB2D26B3231C002355DC /* alertSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEF0FB2C26B3231C002355DC /* alertSound.mp3 */; };
+		FEF0FB3126B3259D002355DC /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF0FB3026B3259D002355DC /* PlaySound.swift */; };
+		FEF0FB3326B33191002355DC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0FB3226B33191002355DC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		FEC0B31026AFA1FC00CAE4EB /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		FEC0B31226AFA21400CAE4EB /* ItemsInOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInOrderView.swift; sourceTree = "<group>"; };
 		FEC0B31626AFA81400CAE4EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEF0FB2A26B322D7002355DC /* orderInAlert.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = orderInAlert.mov; sourceTree = "<group>"; };
+		FEF0FB2C26B3231C002355DC /* alertSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alertSound.mp3; sourceTree = "<group>"; };
+		FEF0FB3026B3259D002355DC /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		FEF0FB3226B33191002355DC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,7 @@
 		FEC0B2D926AFA18100CAE4EB = {
 			isa = PBXGroup;
 			children = (
+				FEF0FB3226B33191002355DC /* Launch Screen.storyboard */,
 				FEC0B2E426AFA18100CAE4EB /* burger to go */,
 				FEC0B2F626AFA18200CAE4EB /* burger to goTests */,
 				FEC0B30126AFA18200CAE4EB /* burger to goUITests */,
@@ -143,11 +152,13 @@
 		FEC0B2E426AFA18100CAE4EB /* burger to go */ = {
 			isa = PBXGroup;
 			children = (
+				FEF0FB2626B32208002355DC /* PlaySound */,
 				FEC0B2E526AFA18100CAE4EB /* burger_to_goApp.swift */,
 				FEC0B2E726AFA18100CAE4EB /* ContentView.swift */,
 				FEC0B31026AFA1FC00CAE4EB /* OrderListView.swift */,
 				FE5D0CBE26B3021A006640A1 /* models.swift */,
 				FEC0B31226AFA21400CAE4EB /* ItemsInOrderView.swift */,
+				FEF0FB3026B3259D002355DC /* PlaySound.swift */,
 				FEC0B2E926AFA18200CAE4EB /* Assets.xcassets */,
 				FEC0B2EE26AFA18200CAE4EB /* Info.plist */,
 				FEC0B31626AFA81400CAE4EB /* GoogleService-Info.plist */,
@@ -180,6 +191,23 @@
 				FEC0B30426AFA18200CAE4EB /* Info.plist */,
 			);
 			path = "burger to goUITests";
+			sourceTree = "<group>";
+		};
+		FEF0FB2626B32208002355DC /* PlaySound */ = {
+			isa = PBXGroup;
+			children = (
+				FEF0FB2726B32217002355DC /* Sounds */,
+			);
+			path = PlaySound;
+			sourceTree = "<group>";
+		};
+		FEF0FB2726B32217002355DC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FEF0FB2A26B322D7002355DC /* orderInAlert.mov */,
+				FEF0FB2C26B3231C002355DC /* alertSound.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +318,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF0FB3326B33191002355DC /* Launch Screen.storyboard in Resources */,
 				FEC0B2ED26AFA18200CAE4EB /* Preview Assets.xcassets in Resources */,
 				FEC0B2EA26AFA18200CAE4EB /* Assets.xcassets in Resources */,
 				FEC0B31726AFA81400CAE4EB /* GoogleService-Info.plist in Resources */,
+				FEF0FB2D26B3231C002355DC /* alertSound.mp3 in Resources */,
+				FEF0FB2B26B322D7002355DC /* orderInAlert.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5D0CBF26B3021A006640A1 /* models.swift in Sources */,
+				FEF0FB3126B3259D002355DC /* PlaySound.swift in Sources */,
 				FEC0B2E826AFA18100CAE4EB /* ContentView.swift in Sources */,
 				FEC0B31326AFA21400CAE4EB /* ItemsInOrderView.swift in Sources */,
 				FEC0B2E626AFA18100CAE4EB /* burger_to_goApp.swift in Sources */,

@@ -19,6 +19,7 @@ struct ItemsInOrderView: View {
                     .padding()
                     .foregroundColor(color)
                     .onAppear(perform: {
+                        UIApplication.shared.isIdleTimerDisabled = true
                         for i in grandList.orders {
                             let isEqual = i == name
                             if isEqual == true{
@@ -40,6 +41,7 @@ struct ItemsInOrderView: View {
             }
             Spacer()
             Button(action: {
+                //playSound()
                 color = Color.green
                 grandList.orders.append(name)
             }, label: {
